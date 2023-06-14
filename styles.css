@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: rgb(180, 230, 221);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: rgb(125, 236, 227);
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-style: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.activ {
+  flex: 10;
+  width: 200px;
+}
+
+.slide.activ h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.slide1 {
+  background-image: url(images/dog-gd221969bb_640.jpg)
+}
+
+.slide2 {
+  background-image: url(images/puppy-ge98b2c45f_640.jpg)
+}
+
+.slide3 {
+  background-image: url(images/dog-gd56625f77_640.jpg)
+}
+
+.slide4 {
+  background-image: url(images/french-bulldog-gad193c182_640.jpg)
+}
+
+.slide5 {
+  background-image: url(images/puppy-g82e228a3c_640.jpg)
+}
